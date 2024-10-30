@@ -1,0 +1,545 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6BEE86B22CD2C7C30005755E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE86B12CD2C7C30005755E /* AppDelegate.swift */; };
+		6BEE86B42CD2C7C30005755E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE86B32CD2C7C30005755E /* SceneDelegate.swift */; };
+		6BEE86B62CD2C7C30005755E /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE86B52CD2C7C30005755E /* RootViewController.swift */; };
+		6BEE86B92CD2C7C30005755E /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6BEE86B82CD2C7C30005755E /* Base */; };
+		6BEE86BC2CD2C7C30005755E /* Pregnancy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE86BA2CD2C7C30005755E /* Pregnancy.xcdatamodeld */; };
+		6BEE86BE2CD2C7C40005755E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BEE86BD2CD2C7C40005755E /* Assets.xcassets */; };
+		6BEE86C12CD2C7C40005755E /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6BEE86C02CD2C7C40005755E /* Base */; };
+		6BEE86CB2CD2CB390005755E /* SFProText-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6BEE86CA2CD2CB390005755E /* SFProText-Light.ttf */; };
+		6BEE86CF2CD2CB4E0005755E /* SFProText-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6BEE86CC2CD2CB4E0005755E /* SFProText-Medium.ttf */; };
+		6BEE86D02CD2CB4E0005755E /* SFProText-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6BEE86CD2CD2CB4E0005755E /* SFProText-Semibold.ttf */; };
+		6BEE86D12CD2CB4E0005755E /* SFProText-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6BEE86CE2CD2CB4E0005755E /* SFProText-Regular.ttf */; };
+		6BEE86D32CD2CB7E0005755E /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE86D22CD2CB7E0005755E /* Font.swift */; };
+		6BEE86D52CD2CEA40005755E /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE86D42CD2CEA40005755E /* UIView.swift */; };
+		6BEE86D82CD2CECA0005755E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE86D72CD2CECA0005755E /* ViewController.swift */; };
+		6BEE86DA2CD2CF050005755E /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE86D92CD2CF050005755E /* Date.swift */; };
+		6BEE86DC2CD2CF230005755E /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE86DB2CD2CF230005755E /* ShadowView.swift */; };
+		6BEE86DE2CD2CF3C0005755E /* BaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE86DD2CD2CF3C0005755E /* BaseButton.swift */; };
+		6BEE86E02CD2CF570005755E /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE86DF2CD2CF570005755E /* String.swift */; };
+		6BEE86E22CD2CFB10005755E /* BaseTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE86E12CD2CFB10005755E /* BaseTextField.swift */; };
+		6BEE86E72CD2D4620005755E /* WeekCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BEE86E62CD2D4620005755E /* WeekCollectionViewCell.xib */; };
+		6BEE86E82CD2D4620005755E /* WeekCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE86E52CD2D4620005755E /* WeekCollectionViewCell.swift */; };
+		6BEE86ED2CD2DBF90005755E /* GenderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BEE86EC2CD2DBF90005755E /* GenderViewController.xib */; };
+		6BEE86EE2CD2DBF90005755E /* GenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE86EB2CD2DBF90005755E /* GenderViewController.swift */; };
+		6BEE86F12CD2E05E0005755E /* PregnancyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE86F02CD2E05E0005755E /* PregnancyModel.swift */; };
+		6BEE86F42CD2E0DB0005755E /* PregnancyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE86F32CD2E0DB0005755E /* PregnancyViewModel.swift */; };
+		6BEE86F62CD2ED610005755E /* GenderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE86F52CD2ED610005755E /* GenderButton.swift */; };
+		6BEE86F92CD2EF5F0005755E /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE86F82CD2EF5F0005755E /* CoreDataManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6BEE86AE2CD2C7C30005755E /* Pregnancy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pregnancy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BEE86B12CD2C7C30005755E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6BEE86B32CD2C7C30005755E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6BEE86B52CD2C7C30005755E /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		6BEE86B82CD2C7C30005755E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Root.storyboard; sourceTree = "<group>"; };
+		6BEE86BB2CD2C7C30005755E /* Pregnancy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pregnancy.xcdatamodel; sourceTree = "<group>"; };
+		6BEE86BD2CD2C7C40005755E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6BEE86C02CD2C7C40005755E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6BEE86C22CD2C7C40005755E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BEE86CA2CD2CB390005755E /* SFProText-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Light.ttf"; sourceTree = "<group>"; };
+		6BEE86CC2CD2CB4E0005755E /* SFProText-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Medium.ttf"; sourceTree = "<group>"; };
+		6BEE86CD2CD2CB4E0005755E /* SFProText-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Semibold.ttf"; sourceTree = "<group>"; };
+		6BEE86CE2CD2CB4E0005755E /* SFProText-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Regular.ttf"; sourceTree = "<group>"; };
+		6BEE86D22CD2CB7E0005755E /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		6BEE86D42CD2CEA40005755E /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		6BEE86D72CD2CECA0005755E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6BEE86D92CD2CF050005755E /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		6BEE86DB2CD2CF230005755E /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		6BEE86DD2CD2CF3C0005755E /* BaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseButton.swift; sourceTree = "<group>"; };
+		6BEE86DF2CD2CF570005755E /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		6BEE86E12CD2CFB10005755E /* BaseTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTextField.swift; sourceTree = "<group>"; };
+		6BEE86E52CD2D4620005755E /* WeekCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekCollectionViewCell.swift; sourceTree = "<group>"; };
+		6BEE86E62CD2D4620005755E /* WeekCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeekCollectionViewCell.xib; sourceTree = "<group>"; };
+		6BEE86EB2CD2DBF90005755E /* GenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderViewController.swift; sourceTree = "<group>"; };
+		6BEE86EC2CD2DBF90005755E /* GenderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GenderViewController.xib; sourceTree = "<group>"; };
+		6BEE86F02CD2E05E0005755E /* PregnancyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PregnancyModel.swift; sourceTree = "<group>"; };
+		6BEE86F32CD2E0DB0005755E /* PregnancyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PregnancyViewModel.swift; sourceTree = "<group>"; };
+		6BEE86F52CD2ED610005755E /* GenderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderButton.swift; sourceTree = "<group>"; };
+		6BEE86F82CD2EF5F0005755E /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6BEE86AB2CD2C7C30005755E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6BEE86A52CD2C7C30005755E = {
+			isa = PBXGroup;
+			children = (
+				6BEE86B02CD2C7C30005755E /* Pregnancy */,
+				6BEE86AF2CD2C7C30005755E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6BEE86AF2CD2C7C30005755E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6BEE86AE2CD2C7C30005755E /* Pregnancy.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6BEE86B02CD2C7C30005755E /* Pregnancy */ = {
+			isa = PBXGroup;
+			children = (
+				6BEE86F72CD2EF520005755E /* CoreData */,
+				6BEE86E92CD2DBDD0005755E /* Gender */,
+				6BEE86D62CD2CEAB0005755E /* Root */,
+				6BEE86C82CD2CB1D0005755E /* Extension */,
+				6BEE86B12CD2C7C30005755E /* AppDelegate.swift */,
+				6BEE86E12CD2CFB10005755E /* BaseTextField.swift */,
+				6BEE86B32CD2C7C30005755E /* SceneDelegate.swift */,
+				6BEE86BD2CD2C7C40005755E /* Assets.xcassets */,
+				6BEE86BF2CD2C7C40005755E /* LaunchScreen.storyboard */,
+				6BEE86C22CD2C7C40005755E /* Info.plist */,
+				6BEE86BA2CD2C7C30005755E /* Pregnancy.xcdatamodeld */,
+			);
+			path = Pregnancy;
+			sourceTree = "<group>";
+		};
+		6BEE86C82CD2CB1D0005755E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				6BEE86C92CD2CB220005755E /* Font */,
+				6BEE86D42CD2CEA40005755E /* UIView.swift */,
+				6BEE86D72CD2CECA0005755E /* ViewController.swift */,
+				6BEE86D92CD2CF050005755E /* Date.swift */,
+				6BEE86DB2CD2CF230005755E /* ShadowView.swift */,
+				6BEE86DD2CD2CF3C0005755E /* BaseButton.swift */,
+				6BEE86F52CD2ED610005755E /* GenderButton.swift */,
+				6BEE86DF2CD2CF570005755E /* String.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		6BEE86C92CD2CB220005755E /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				6BEE86CA2CD2CB390005755E /* SFProText-Light.ttf */,
+				6BEE86CC2CD2CB4E0005755E /* SFProText-Medium.ttf */,
+				6BEE86CE2CD2CB4E0005755E /* SFProText-Regular.ttf */,
+				6BEE86CD2CD2CB4E0005755E /* SFProText-Semibold.ttf */,
+				6BEE86D22CD2CB7E0005755E /* Font.swift */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		6BEE86D62CD2CEAB0005755E /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				6BEE86F22CD2E0BD0005755E /* ViewModel */,
+				6BEE86EF2CD2E04D0005755E /* Model */,
+				6BEE86E42CD2D44F0005755E /* Cell */,
+				6BEE86E32CD2D4470005755E /* View */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		6BEE86E32CD2D4470005755E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6BEE86B52CD2C7C30005755E /* RootViewController.swift */,
+				6BEE86B72CD2C7C30005755E /* Root.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6BEE86E42CD2D44F0005755E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6BEE86E52CD2D4620005755E /* WeekCollectionViewCell.swift */,
+				6BEE86E62CD2D4620005755E /* WeekCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		6BEE86E92CD2DBDD0005755E /* Gender */ = {
+			isa = PBXGroup;
+			children = (
+				6BEE86EA2CD2DBE60005755E /* View */,
+			);
+			path = Gender;
+			sourceTree = "<group>";
+		};
+		6BEE86EA2CD2DBE60005755E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6BEE86EB2CD2DBF90005755E /* GenderViewController.swift */,
+				6BEE86EC2CD2DBF90005755E /* GenderViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6BEE86EF2CD2E04D0005755E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6BEE86F02CD2E05E0005755E /* PregnancyModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6BEE86F22CD2E0BD0005755E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6BEE86F32CD2E0DB0005755E /* PregnancyViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6BEE86F72CD2EF520005755E /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				6BEE86F82CD2EF5F0005755E /* CoreDataManager.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6BEE86AD2CD2C7C30005755E /* Pregnancy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BEE86C52CD2C7C40005755E /* Build configuration list for PBXNativeTarget "Pregnancy" */;
+			buildPhases = (
+				6BEE86AA2CD2C7C30005755E /* Sources */,
+				6BEE86AB2CD2C7C30005755E /* Frameworks */,
+				6BEE86AC2CD2C7C30005755E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pregnancy;
+			productName = Pregnancy;
+			productReference = 6BEE86AE2CD2C7C30005755E /* Pregnancy.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6BEE86A62CD2C7C30005755E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					6BEE86AD2CD2C7C30005755E = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 6BEE86A92CD2C7C30005755E /* Build configuration list for PBXProject "Pregnancy" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6BEE86A52CD2C7C30005755E;
+			productRefGroup = 6BEE86AF2CD2C7C30005755E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6BEE86AD2CD2C7C30005755E /* Pregnancy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6BEE86AC2CD2C7C30005755E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BEE86BE2CD2C7C40005755E /* Assets.xcassets in Resources */,
+				6BEE86C12CD2C7C40005755E /* Base in Resources */,
+				6BEE86D12CD2CB4E0005755E /* SFProText-Regular.ttf in Resources */,
+				6BEE86B92CD2C7C30005755E /* Base in Resources */,
+				6BEE86CB2CD2CB390005755E /* SFProText-Light.ttf in Resources */,
+				6BEE86CF2CD2CB4E0005755E /* SFProText-Medium.ttf in Resources */,
+				6BEE86E72CD2D4620005755E /* WeekCollectionViewCell.xib in Resources */,
+				6BEE86ED2CD2DBF90005755E /* GenderViewController.xib in Resources */,
+				6BEE86D02CD2CB4E0005755E /* SFProText-Semibold.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6BEE86AA2CD2C7C30005755E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BEE86E82CD2D4620005755E /* WeekCollectionViewCell.swift in Sources */,
+				6BEE86DC2CD2CF230005755E /* ShadowView.swift in Sources */,
+				6BEE86E02CD2CF570005755E /* String.swift in Sources */,
+				6BEE86B62CD2C7C30005755E /* RootViewController.swift in Sources */,
+				6BEE86BC2CD2C7C30005755E /* Pregnancy.xcdatamodeld in Sources */,
+				6BEE86D32CD2CB7E0005755E /* Font.swift in Sources */,
+				6BEE86F92CD2EF5F0005755E /* CoreDataManager.swift in Sources */,
+				6BEE86F42CD2E0DB0005755E /* PregnancyViewModel.swift in Sources */,
+				6BEE86DA2CD2CF050005755E /* Date.swift in Sources */,
+				6BEE86E22CD2CFB10005755E /* BaseTextField.swift in Sources */,
+				6BEE86F62CD2ED610005755E /* GenderButton.swift in Sources */,
+				6BEE86F12CD2E05E0005755E /* PregnancyModel.swift in Sources */,
+				6BEE86B22CD2C7C30005755E /* AppDelegate.swift in Sources */,
+				6BEE86DE2CD2CF3C0005755E /* BaseButton.swift in Sources */,
+				6BEE86D82CD2CECA0005755E /* ViewController.swift in Sources */,
+				6BEE86D52CD2CEA40005755E /* UIView.swift in Sources */,
+				6BEE86B42CD2C7C30005755E /* SceneDelegate.swift in Sources */,
+				6BEE86EE2CD2DBF90005755E /* GenderViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6BEE86B72CD2C7C30005755E /* Root.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6BEE86B82CD2C7C30005755E /* Base */,
+			);
+			name = Root.storyboard;
+			sourceTree = "<group>";
+		};
+		6BEE86BF2CD2C7C40005755E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6BEE86C02CD2C7C40005755E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6BEE86C32CD2C7C40005755E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6BEE86C42CD2C7C40005755E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6BEE86C62CD2C7C40005755E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9YUSQBCAX9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Pregnancy/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Root;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Karen.Pregnancy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6BEE86C72CD2C7C40005755E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9YUSQBCAX9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Pregnancy/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Root;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Karen.Pregnancy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6BEE86A92CD2C7C30005755E /* Build configuration list for PBXProject "Pregnancy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BEE86C32CD2C7C40005755E /* Debug */,
+				6BEE86C42CD2C7C40005755E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BEE86C52CD2C7C40005755E /* Build configuration list for PBXNativeTarget "Pregnancy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BEE86C62CD2C7C40005755E /* Debug */,
+				6BEE86C72CD2C7C40005755E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6BEE86BA2CD2C7C30005755E /* Pregnancy.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6BEE86BB2CD2C7C30005755E /* Pregnancy.xcdatamodel */,
+			);
+			currentVersion = 6BEE86BB2CD2C7C30005755E /* Pregnancy.xcdatamodel */;
+			path = Pregnancy.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6BEE86A62CD2C7C30005755E /* Project object */;
+}
