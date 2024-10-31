@@ -8,14 +8,45 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-
+    @IBOutlet var generalInfoViews: [UIView]!
+    @IBOutlet var titleLabels: [UILabel]!
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var termLabel: UILabel!
+    @IBOutlet weak var genderLabel: UILabel!
+    @IBOutlet weak var remaindersLabel: UILabel!
+    @IBOutlet weak var remindersView: UIView!
+    @IBOutlet weak var remindersTableView: UITableView!
+    private let viewModel = HomeViewModel.shared
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-//        let originalImage = UIImage.home.withRenderingMode(.alwaysOriginal)
-//        let originalSelectedImage = UIImage.selectedHome.withRenderingMode(.alwaysOriginal)
-//        tabBarItem.image = originalImage
-//        self.tabBarItem.selectedImage = originalSelectedImage
-        // Do any additional setup after loading the view.
+        setupUI()
+        fetchData()
     }
-
+    
+    func setupUI() {
+        for view in generalInfoViews {
+            view.layer.borderColor = UIColor.baseOrange.cgColor
+            view.layer.borderWidth = 1
+            view.layer.cornerRadius = 16
+        }
+        
+        titleLabels.forEach({ $0.font = .regular(size: 14) })
+        dateLabel.font = .regular(size: 16)
+        termLabel.font = .regular(size: 16)
+        genderLabel.font = .regular(size: 16)
+        remaindersLabel.font = .regular(size: 20)
+        remindersView.layer.borderWidth = 1
+        remindersView.layer.borderColor = UIColor.genderBorder.cgColor
+        remindersView.layer.cornerRadius = 6
+    }
+    
+    func fetchData() {
+        viewModel.fetchPregrancy { [weak self] pregnancyModel, _ in
+            guard let self = self else { return }
+            self.dateLabel.text = pregnancyModel?.menstruation?.toString(format: "dd/MM")
+            self.termLabel.text = "\(pregnancyModel?.menstruation?.calculateWeeks() ?? 1) week"
+            self.genderLabel.text = pregnancyModel?.gender
+        }
+    }
 }

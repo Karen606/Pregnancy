@@ -23,6 +23,6 @@ extension Date {
     func calculateWeeks() -> Int {
         let calendar = Calendar.current
         let components = calendar.dateComponents([.weekOfYear], from: self, to: Date())
-        return components.weekOfYear ?? 0
+        return components.weekOfYear ?? 1
     }
 }

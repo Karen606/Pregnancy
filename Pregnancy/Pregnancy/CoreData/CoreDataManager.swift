@@ -52,6 +52,31 @@ class CoreDataManager {
         }
     }
     
+    func fetchPregnancy(completion: @escaping (PregnancyModel?, Error?) -> Void) {
+        let backgroundContext = persistentContainer.newBackgroundContext()
+        backgroundContext.perform {
+            let fetchRequest: NSFetchRequest<Pregnancy> = Pregnancy.fetchRequest()
+            
+            do {
+                let results = try backgroundContext.fetch(fetchRequest)
+                if let pregrancy = results.first {
+                    let pregrancyModel = PregnancyModel(menstruation: pregrancy.menstruation, birth: pregrancy.birth, gender: pregrancy.gender)
+                    DispatchQueue.main.async {
+                        completion(pregrancyModel, nil)
+                    }
+                } else {
+                    DispatchQueue.main.async {
+                        completion(nil, nil)
+                    }
+                }
+            } catch {
+                DispatchQueue.main.async {
+                    completion(nil, error)
+                }
+            }
+        }
+    }
+    
 //    func fetchParties(completion: @escaping ([PartyModel], Error?) -> Void) {
 //        let backgroundContext = persistentContainer.newBackgroundContext()
 //        backgroundContext.perform {
