@@ -40,10 +40,36 @@ class BaseTextField: UITextField {
     }
     
     func commonInit() {
+        self.backgroundColor = .background
         self.font = .regular(size: 16)
         self.layer.cornerRadius = 6
         self.layer.borderWidth = 1
         self.layer.borderColor = UIColor.border.cgColor
         self.textColor = .black
+    }
+}
+
+extension BaseTextField {
+    func setupRightViewIcon(_ image: UIImage, size: CGSize) {
+        let icon = UIImageView(frame:CGRect(x: 0, y: 0, width: size.width, height: size.height))
+        icon.image = image
+        icon.contentMode = .center
+        let iconContainerView: UIView = UIView(frame:CGRect(x: 0, y: 0, width: size.width, height: size.height))
+        iconContainerView.isUserInteractionEnabled = false
+        iconContainerView.addSubview(icon)
+        rightView = iconContainerView
+        rightViewMode = .always
+        self.padding.right = size.width
+    }
+    
+    func setupLeftViewIcon(_ image: UIImage) {
+        let icon = UIImageView(frame:CGRect(x: 0, y: 0, width: 26, height: 26))
+        icon.image = image
+        icon.contentMode = .center
+        let iconContainerView: UIView = UIView(frame:CGRect(x: 0, y: 0, width: 26, height: 26))
+        iconContainerView.isUserInteractionEnabled = false
+        iconContainerView.addSubview(icon)
+        leftView = iconContainerView
+        leftViewMode = .always
     }
 }

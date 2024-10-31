@@ -77,6 +77,59 @@ class CoreDataManager {
         }
     }
     
+    func saveReminder(reminderModel: ReminderModel, completion: @escaping (Error?) -> Void) {
+        let id = reminderModel.id ?? UUID()
+        let backgroundContext = persistentContainer.newBackgroundContext()
+        backgroundContext.perform {
+            let fetchRequest: NSFetchRequest<Reminder> = Reminder.fetchRequest()
+            fetchRequest.predicate = NSPredicate(format: "id == %@", id as CVarArg)
+
+            do {
+                let results = try backgroundContext.fetch(fetchRequest)
+                let reminder: Reminder
+
+                if let existingReminder = results.first {
+                    reminder = existingReminder
+                } else {
+                    reminder = Reminder(context: backgroundContext)
+                    reminder.id = id
+                }
+                reminder.name = reminderModel.name
+                reminder.time = reminderModel.time
+                reminder.date = reminderModel.date
+                try backgroundContext.save()
+                DispatchQueue.main.async {
+                    completion(nil)
+                }
+            } catch {
+                DispatchQueue.main.async {
+                    completion(error)
+                }
+            }
+        }
+    }
+    
+    func fetchReminders(completion: @escaping ([ReminderModel], Error?) -> Void) {
+        let backgroundContext = persistentContainer.newBackgroundContext()
+        backgroundContext.perform {
+            let fetchRequest: NSFetchRequest<Reminder> = Reminder.fetchRequest()
+            
+            do {
+                let results = try backgroundContext.fetch(fetchRequest)
+                var remindersModel: [ReminderModel] = []
+                for result in results {
+                    let reminderModel = ReminderModel(id: result.id, name: result.name, date: result.date, time: result.time)
+                    remindersModel.append(reminderModel)
+                }
+                completion(remindersModel, nil)
+            } catch {
+                DispatchQueue.main.async {
+                    completion([], error)
+                }
+            }
+        }
+    }
+    
 //    func fetchParties(completion: @escaping ([PartyModel], Error?) -> Void) {
 //        let backgroundContext = persistentContainer.newBackgroundContext()
 //        backgroundContext.perform {

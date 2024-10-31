@@ -24,6 +24,10 @@ class HomeViewController: UIViewController {
         fetchData()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        viewModel.fetchReminders()
+    }
+    
     func setupUI() {
         for view in generalInfoViews {
             view.layer.borderColor = UIColor.baseOrange.cgColor
@@ -39,6 +43,9 @@ class HomeViewController: UIViewController {
         remindersView.layer.borderWidth = 1
         remindersView.layer.borderColor = UIColor.genderBorder.cgColor
         remindersView.layer.cornerRadius = 6
+        remindersTableView.delegate = self
+        remindersTableView.dataSource = self
+        remindersTableView.register(UINib(nibName: "ReminderTableViewCell", bundle: nil), forCellReuseIdentifier: "ReminderTableViewCell")
     }
     
     func fetchData() {
@@ -48,5 +55,17 @@ class HomeViewController: UIViewController {
             self.termLabel.text = "\(pregnancyModel?.menstruation?.calculateWeeks() ?? 1) week"
             self.genderLabel.text = pregnancyModel?.gender
         }
+    }
+}
+
+extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        viewModel.reminders.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ReminderTableViewCell", for: indexPath) as! ReminderTableViewCell
+        cell.configure(reminder: viewModel.reminders[indexPath.row])
+        return cell
     }
 }

@@ -23,4 +23,13 @@ extension UIFont {
     static func light(size: CFloat) -> UIFont? {
         return UIFont(name: "SFProText-Light", size: CGFloat(size))
     }
+    
+    static func montserratMedium(size: CFloat) -> UIFont? {
+        return UIFont(name: "Montserrat-Medium", size: CGFloat(size))
+    }
+    
+    
+    static func bold(size: CFloat) -> UIFont? {
+        return UIFont(name: "Montserrat-Bold", size: CGFloat(size))
+    }
 }
