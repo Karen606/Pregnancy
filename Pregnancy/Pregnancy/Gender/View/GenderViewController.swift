@@ -71,7 +71,10 @@ class GenderViewController: UIViewController {
             if let error = error {
                 self.showErrorAlert(message: error.localizedDescription)
             } else {
-                
+                UserDefaults.standard.set(true, forKey: "hasLaunchedBefore")
+                let tabBarVC = UIStoryboard(name: "TabBar", bundle: .main).instantiateViewController(withIdentifier: "TabBarViewController")
+                tabBarVC.tabBarController?.tabBar.items
+                tabBarVC.setAsRoot()
             }
         }
     }

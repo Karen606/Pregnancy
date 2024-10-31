@@ -33,5 +33,15 @@ extension UIViewController {
         }
         present(alertController, animated: true, completion: nil)
     }
+    
+    func setAsRoot() {
+        guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+              let window = windowScene.windows.first else {
+            return
+        }
+        
+        window.rootViewController = self
+        window.makeKeyAndVisible()
+    }
 }
 
