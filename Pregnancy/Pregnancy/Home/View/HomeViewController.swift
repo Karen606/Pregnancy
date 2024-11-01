@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Combine
 
 class HomeViewController: UIViewController {
     @IBOutlet var generalInfoViews: [UIView]!
@@ -17,10 +18,12 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var remindersView: UIView!
     @IBOutlet weak var remindersTableView: UITableView!
     private let viewModel = HomeViewModel.shared
-    
+    private var cancellables: Set<AnyCancellable> = []
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        subscribe()
         fetchData()
     }
     
@@ -56,6 +59,17 @@ class HomeViewController: UIViewController {
             self.genderLabel.text = pregnancyModel?.gender
         }
     }
+    
+    func subscribe() {
+        viewModel.$reminders
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] reminders in
+                guard let self = self else { return }
+                self.remindersTableView.reloadData()
+            }
+            .store(in: &cancellables)
+    }
+    
 }
 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {

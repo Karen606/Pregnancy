@@ -23,6 +23,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             } else {
                 let rootViewController = UIStoryboard(name: "Root", bundle: .main).instantiateViewController(withIdentifier: "RootViewController")
                 let navigationController = UINavigationController(rootViewController: rootViewController)
+                navigationController.navigationBar.isHidden = true
                 window.rootViewController = navigationController
             }
         let isDarkModeEnabled = UserDefaults.standard.bool(forKey: "isDarkModeEnabled")

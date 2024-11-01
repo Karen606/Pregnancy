@@ -23,7 +23,7 @@ extension Date {
     func calculateWeeks() -> Int {
         let calendar = Calendar.current
         let components = calendar.dateComponents([.weekOfYear], from: self, to: Date())
-        return components.weekOfYear ?? 1
+        return ((components.weekOfYear ?? 0) + 1)
     }
     
     func notifyDate() -> Date {
@@ -41,5 +41,10 @@ extension Date {
             return newDate
         }
         return Date()
+    }
+    
+    func stripTime() -> Date {
+        let calendar = Calendar.current
+        return calendar.startOfDay(for: self)
     }
 }

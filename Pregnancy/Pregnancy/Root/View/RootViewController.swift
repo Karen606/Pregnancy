@@ -93,7 +93,7 @@ class RootViewController: UIViewController {
                 self.birthDateLabel.text = pregnancyModel.birth?.toString()
                 var week = pregnancyModel.menstruation?.calculateWeeks()
                 if (week ?? 0) > 39 { week = 39 }
-                self.weeksCollectionView.scrollToItem(at: IndexPath(item: (week ?? 0), section: 0), at: .left, animated: true)
+                self.weeksCollectionView.scrollToItem(at: IndexPath(item: (week ?? 1) - 1, section: 0), at: .left, animated: true)
             }
             .store(in: &cancellables)
     }

@@ -81,7 +81,7 @@
                                                             <color key="textColor" name="baseText"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MPS-Pe-ak9" customClass="BaseTextField" customModule="Pregnancy" customModuleProvider="target">
+                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MPS-Pe-ak9" customClass="BaseTextField" customModule="Pregnancy" customModuleProvider="target">
                                                             <rect key="frame" x="0.0" y="21" width="156.66666666666666" height="46"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="46" id="9Kq-2k-TAj"/>
@@ -111,7 +111,7 @@
                                                                     <color key="textColor" name="baseText"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q3h-cq-zXR" customClass="BaseTextField" customModule="Pregnancy" customModuleProvider="target">
+                                                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q3h-cq-zXR" customClass="BaseTextField" customModule="Pregnancy" customModuleProvider="target">
                                                                     <rect key="frame" x="0.0" y="21" width="156.33333333333334" height="46"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="46" id="KAG-73-98T"/>

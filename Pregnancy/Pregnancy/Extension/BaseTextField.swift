@@ -45,7 +45,7 @@ class BaseTextField: UITextField {
         self.layer.cornerRadius = 6
         self.layer.borderWidth = 1
         self.layer.borderColor = UIColor.border.cgColor
-        self.textColor = .black
+        self.textColor = .baseText
     }
 }
 

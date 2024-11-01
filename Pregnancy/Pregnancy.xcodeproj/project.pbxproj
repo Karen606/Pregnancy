@@ -7,6 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B8C6DCD2CD2F6F8006819FE /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8C6DCC2CD2F6F8006819FE /* TabBarViewController.swift */; };
+		6B8C6DD12CD3ACF3006819FE /* ReminderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B8C6DD02CD3ACF3006819FE /* ReminderTableViewCell.xib */; };
+		6B8C6DD22CD3ACF3006819FE /* ReminderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8C6DCF2CD3ACF3006819FE /* ReminderTableViewCell.swift */; };
+		6B8C6DD52CD3ADC9006819FE /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8C6DD42CD3ADC9006819FE /* HomeViewModel.swift */; };
+		6B8C6DDA2CD3B74D006819FE /* EventFormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B8C6DD92CD3B74D006819FE /* EventFormViewController.xib */; };
+		6B8C6DDB2CD3B74D006819FE /* EventFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8C6DD82CD3B74D006819FE /* EventFormViewController.swift */; };
+		6B8C6DDD2CD3BCFF006819FE /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B8C6DDC2CD3BCFF006819FE /* Montserrat-Medium.ttf */; };
+		6B8C6DDF2CD3BE7B006819FE /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B8C6DDE2CD3BE7B006819FE /* Montserrat-Bold.ttf */; };
+		6B8C6DE22CD416DA006819FE /* ReminderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8C6DE12CD416DA006819FE /* ReminderModel.swift */; };
+		6B8C6DE52CD4172A006819FE /* EventFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8C6DE42CD4172A006819FE /* EventFormViewModel.swift */; };
+		6B8C6DED2CD41BA1006819FE /* CalendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8C6DEC2CD41BA1006819FE /* CalendarViewModel.swift */; };
+		6B8C6DF22CD427A4006819FE /* HealthFormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B8C6DF12CD427A4006819FE /* HealthFormViewController.xib */; };
+		6B8C6DF32CD427A4006819FE /* HealthFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8C6DF02CD427A4006819FE /* HealthFormViewController.swift */; };
+		6B8C6DF62CD43339006819FE /* HealthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8C6DF52CD43339006819FE /* HealthModel.swift */; };
+		6B8C6DF92CD4338B006819FE /* HealthFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8C6DF82CD4338B006819FE /* HealthFormViewModel.swift */; };
+		6B8C6DFD2CD4381E006819FE /* ExerciseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B8C6DFC2CD4381E006819FE /* ExerciseTableViewCell.xib */; };
+		6B8C6DFE2CD4381E006819FE /* ExerciseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8C6DFB2CD4381E006819FE /* ExerciseTableViewCell.swift */; };
+		6B8C6E022CD43E41006819FE /* HealthTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B8C6E012CD43E41006819FE /* HealthTableViewCell.xib */; };
+		6B8C6E032CD43E41006819FE /* HealthTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8C6E002CD43E41006819FE /* HealthTableViewCell.swift */; };
+		6BE641142CD4422900CB5FD9 /* HealthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE641132CD4422900CB5FD9 /* HealthViewModel.swift */; };
+		6BE641162CD44BDD00CB5FD9 /* BaseSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE641152CD44BDD00CB5FD9 /* BaseSwitch.swift */; };
+		6BE641192CD4559A00CB5FD9 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE641182CD4559A00CB5FD9 /* NotificationManager.swift */; };
+		6BE6411E2CD52B7A00CB5FD9 /* FoodFormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BE6411D2CD52B7A00CB5FD9 /* FoodFormViewController.xib */; };
+		6BE6411F2CD52B7A00CB5FD9 /* FoodFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE6411C2CD52B7A00CB5FD9 /* FoodFormViewController.swift */; };
+		6BE641232CD52DFB00CB5FD9 /* FoodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE641222CD52DFB00CB5FD9 /* FoodModel.swift */; };
+		6BE641262CD52F9700CB5FD9 /* FoodFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE641252CD52F9700CB5FD9 /* FoodFormViewModel.swift */; };
+		6BE6412A2CD536BF00CB5FD9 /* FoodTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BE641292CD536BF00CB5FD9 /* FoodTableViewCell.xib */; };
+		6BE6412B2CD536BF00CB5FD9 /* FoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE641282CD536BF00CB5FD9 /* FoodTableViewCell.swift */; };
+		6BE6412F2CD5381300CB5FD9 /* FoodViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE6412E2CD5381300CB5FD9 /* FoodViewModel.swift */; };
+		6BE641322CD541D400CB5FD9 /* RecamendationCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BE641312CD541D400CB5FD9 /* RecamendationCollectionViewCell.xib */; };
+		6BE641332CD541D400CB5FD9 /* RecamendationCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE641302CD541D400CB5FD9 /* RecamendationCollectionViewCell.swift */; };
 		6BEE86B22CD2C7C30005755E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE86B12CD2C7C30005755E /* AppDelegate.swift */; };
 		6BEE86B42CD2C7C30005755E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE86B32CD2C7C30005755E /* SceneDelegate.swift */; };
 		6BEE86B62CD2C7C30005755E /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE86B52CD2C7C30005755E /* RootViewController.swift */; };
@@ -34,9 +65,51 @@
 		6BEE86F42CD2E0DB0005755E /* PregnancyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE86F32CD2E0DB0005755E /* PregnancyViewModel.swift */; };
 		6BEE86F62CD2ED610005755E /* GenderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE86F52CD2ED610005755E /* GenderButton.swift */; };
 		6BEE86F92CD2EF5F0005755E /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE86F82CD2EF5F0005755E /* CoreDataManager.swift */; };
+		6BEE86FE2CD2F2660005755E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE86FD2CD2F2660005755E /* HomeViewController.swift */; };
+		6BEE87002CD2F2700005755E /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BEE86FF2CD2F2700005755E /* Home.storyboard */; };
+		6BEE87052CD2F2C00005755E /* HealthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE87042CD2F2C00005755E /* HealthViewController.swift */; };
+		6BEE87072CD2F2C70005755E /* Health.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BEE87062CD2F2C70005755E /* Health.storyboard */; };
+		6BEE870A2CD2F2DC0005755E /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE87092CD2F2DC0005755E /* CalendarViewController.swift */; };
+		6BEE870C2CD2F2E50005755E /* Calendar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BEE870B2CD2F2E50005755E /* Calendar.storyboard */; };
+		6BEE87102CD2F30E0005755E /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE870F2CD2F30E0005755E /* FoodViewController.swift */; };
+		6BEE87122CD2F3150005755E /* Food.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BEE87112CD2F3150005755E /* Food.storyboard */; };
+		6BEE87162CD2F3310005755E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE87152CD2F3310005755E /* SettingsViewController.swift */; };
+		6BEE87182CD2F3380005755E /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BEE87172CD2F3380005755E /* Settings.storyboard */; };
+		6BEE871B2CD2F3540005755E /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BEE871A2CD2F3540005755E /* TabBar.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6B8C6DCC2CD2F6F8006819FE /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		6B8C6DCF2CD3ACF3006819FE /* ReminderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderTableViewCell.swift; sourceTree = "<group>"; };
+		6B8C6DD02CD3ACF3006819FE /* ReminderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReminderTableViewCell.xib; sourceTree = "<group>"; };
+		6B8C6DD42CD3ADC9006819FE /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		6B8C6DD82CD3B74D006819FE /* EventFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventFormViewController.swift; sourceTree = "<group>"; };
+		6B8C6DD92CD3B74D006819FE /* EventFormViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventFormViewController.xib; sourceTree = "<group>"; };
+		6B8C6DDC2CD3BCFF006819FE /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		6B8C6DDE2CD3BE7B006819FE /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		6B8C6DE12CD416DA006819FE /* ReminderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderModel.swift; sourceTree = "<group>"; };
+		6B8C6DE42CD4172A006819FE /* EventFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventFormViewModel.swift; sourceTree = "<group>"; };
+		6B8C6DEC2CD41BA1006819FE /* CalendarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewModel.swift; sourceTree = "<group>"; };
+		6B8C6DF02CD427A4006819FE /* HealthFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthFormViewController.swift; sourceTree = "<group>"; };
+		6B8C6DF12CD427A4006819FE /* HealthFormViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HealthFormViewController.xib; sourceTree = "<group>"; };
+		6B8C6DF52CD43339006819FE /* HealthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthModel.swift; sourceTree = "<group>"; };
+		6B8C6DF82CD4338B006819FE /* HealthFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthFormViewModel.swift; sourceTree = "<group>"; };
+		6B8C6DFB2CD4381E006819FE /* ExerciseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseTableViewCell.swift; sourceTree = "<group>"; };
+		6B8C6DFC2CD4381E006819FE /* ExerciseTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExerciseTableViewCell.xib; sourceTree = "<group>"; };
+		6B8C6E002CD43E41006819FE /* HealthTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthTableViewCell.swift; sourceTree = "<group>"; };
+		6B8C6E012CD43E41006819FE /* HealthTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HealthTableViewCell.xib; sourceTree = "<group>"; };
+		6BE641132CD4422900CB5FD9 /* HealthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthViewModel.swift; sourceTree = "<group>"; };
+		6BE641152CD44BDD00CB5FD9 /* BaseSwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSwitch.swift; sourceTree = "<group>"; };
+		6BE641182CD4559A00CB5FD9 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		6BE6411C2CD52B7A00CB5FD9 /* FoodFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodFormViewController.swift; sourceTree = "<group>"; };
+		6BE6411D2CD52B7A00CB5FD9 /* FoodFormViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodFormViewController.xib; sourceTree = "<group>"; };
+		6BE641222CD52DFB00CB5FD9 /* FoodModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodModel.swift; sourceTree = "<group>"; };
+		6BE641252CD52F9700CB5FD9 /* FoodFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodFormViewModel.swift; sourceTree = "<group>"; };
+		6BE641282CD536BF00CB5FD9 /* FoodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTableViewCell.swift; sourceTree = "<group>"; };
+		6BE641292CD536BF00CB5FD9 /* FoodTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodTableViewCell.xib; sourceTree = "<group>"; };
+		6BE6412E2CD5381300CB5FD9 /* FoodViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewModel.swift; sourceTree = "<group>"; };
+		6BE641302CD541D400CB5FD9 /* RecamendationCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecamendationCollectionViewCell.swift; sourceTree = "<group>"; };
+		6BE641312CD541D400CB5FD9 /* RecamendationCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecamendationCollectionViewCell.xib; sourceTree = "<group>"; };
 		6BEE86AE2CD2C7C30005755E /* Pregnancy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pregnancy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BEE86B12CD2C7C30005755E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6BEE86B32CD2C7C30005755E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +139,17 @@
 		6BEE86F32CD2E0DB0005755E /* PregnancyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PregnancyViewModel.swift; sourceTree = "<group>"; };
 		6BEE86F52CD2ED610005755E /* GenderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderButton.swift; sourceTree = "<group>"; };
 		6BEE86F82CD2EF5F0005755E /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		6BEE86FD2CD2F2660005755E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		6BEE86FF2CD2F2700005755E /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		6BEE87042CD2F2C00005755E /* HealthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthViewController.swift; sourceTree = "<group>"; };
+		6BEE87062CD2F2C70005755E /* Health.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Health.storyboard; sourceTree = "<group>"; };
+		6BEE87092CD2F2DC0005755E /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		6BEE870B2CD2F2E50005755E /* Calendar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Calendar.storyboard; sourceTree = "<group>"; };
+		6BEE870F2CD2F30E0005755E /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
+		6BEE87112CD2F3150005755E /* Food.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Food.storyboard; sourceTree = "<group>"; };
+		6BEE87152CD2F3310005755E /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		6BEE87172CD2F3380005755E /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		6BEE871A2CD2F3540005755E /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +163,198 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B8C6DCE2CD3ACE4006819FE /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6B8C6DCF2CD3ACF3006819FE /* ReminderTableViewCell.swift */,
+				6B8C6DD02CD3ACF3006819FE /* ReminderTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		6B8C6DD32CD3ADBD006819FE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6B8C6DD42CD3ADC9006819FE /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6B8C6DD62CD3B717006819FE /* EventForm */ = {
+			isa = PBXGroup;
+			children = (
+				6B8C6DE32CD41718006819FE /* ViewModel */,
+				6B8C6DE02CD416CA006819FE /* Model */,
+				6B8C6DD72CD3B72E006819FE /* View */,
+			);
+			path = EventForm;
+			sourceTree = "<group>";
+		};
+		6B8C6DD72CD3B72E006819FE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6B8C6DD82CD3B74D006819FE /* EventFormViewController.swift */,
+				6B8C6DD92CD3B74D006819FE /* EventFormViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6B8C6DE02CD416CA006819FE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6B8C6DE12CD416DA006819FE /* ReminderModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6B8C6DE32CD41718006819FE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6B8C6DE42CD4172A006819FE /* EventFormViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6B8C6DEB2CD41B93006819FE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6B8C6DEC2CD41BA1006819FE /* CalendarViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6B8C6DEE2CD42771006819FE /* HealthForm */ = {
+			isa = PBXGroup;
+			children = (
+				6B8C6DFA2CD4380B006819FE /* Cell */,
+				6B8C6DF72CD4337D006819FE /* ViewModel */,
+				6B8C6DF42CD4332D006819FE /* Model */,
+				6B8C6DEF2CD42781006819FE /* View */,
+			);
+			path = HealthForm;
+			sourceTree = "<group>";
+		};
+		6B8C6DEF2CD42781006819FE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6B8C6DF02CD427A4006819FE /* HealthFormViewController.swift */,
+				6B8C6DF12CD427A4006819FE /* HealthFormViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6B8C6DF42CD4332D006819FE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6B8C6DF52CD43339006819FE /* HealthModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6B8C6DF72CD4337D006819FE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6B8C6DF82CD4338B006819FE /* HealthFormViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6B8C6DFA2CD4380B006819FE /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6B8C6DFB2CD4381E006819FE /* ExerciseTableViewCell.swift */,
+				6B8C6DFC2CD4381E006819FE /* ExerciseTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		6B8C6DFF2CD43E23006819FE /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6B8C6E002CD43E41006819FE /* HealthTableViewCell.swift */,
+				6B8C6E012CD43E41006819FE /* HealthTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		6BE641122CD4421C00CB5FD9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6BE641132CD4422900CB5FD9 /* HealthViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6BE641172CD4558800CB5FD9 /* NotificationManager */ = {
+			isa = PBXGroup;
+			children = (
+				6BE641182CD4559A00CB5FD9 /* NotificationManager.swift */,
+			);
+			path = NotificationManager;
+			sourceTree = "<group>";
+		};
+		6BE6411A2CD52B4100CB5FD9 /* FoodForm */ = {
+			isa = PBXGroup;
+			children = (
+				6BE641242CD52F8A00CB5FD9 /* ViewModel */,
+				6BE641212CD52DF200CB5FD9 /* Model */,
+				6BE641202CD52DE300CB5FD9 /* Cell */,
+				6BE6411B2CD52B4800CB5FD9 /* View */,
+			);
+			path = FoodForm;
+			sourceTree = "<group>";
+		};
+		6BE6411B2CD52B4800CB5FD9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6BE6411C2CD52B7A00CB5FD9 /* FoodFormViewController.swift */,
+				6BE6411D2CD52B7A00CB5FD9 /* FoodFormViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6BE641202CD52DE300CB5FD9 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		6BE641212CD52DF200CB5FD9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6BE641222CD52DFB00CB5FD9 /* FoodModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6BE641242CD52F8A00CB5FD9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6BE641252CD52F9700CB5FD9 /* FoodFormViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6BE641272CD5367100CB5FD9 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6BE641282CD536BF00CB5FD9 /* FoodTableViewCell.swift */,
+				6BE641292CD536BF00CB5FD9 /* FoodTableViewCell.xib */,
+				6BE641302CD541D400CB5FD9 /* RecamendationCollectionViewCell.swift */,
+				6BE641312CD541D400CB5FD9 /* RecamendationCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		6BE6412C2CD5380100CB5FD9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6BE6412E2CD5381300CB5FD9 /* FoodViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		6BEE86A52CD2C7C30005755E = {
 			isa = PBXGroup;
 			children = (
@@ -98,12 +374,18 @@
 		6BEE86B02CD2C7C30005755E /* Pregnancy */ = {
 			isa = PBXGroup;
 			children = (
-				6BEE86F72CD2EF520005755E /* CoreData */,
+				6BE641172CD4558800CB5FD9 /* NotificationManager */,
+				6BEE87192CD2F33D0005755E /* TabBar */,
+				6BEE87132CD2F3210005755E /* Settings */,
+				6BEE870D2CD2F3020005755E /* Food */,
+				6BEE87012CD2F2740005755E /* Calendar */,
+				6BEE87022CD2F2A80005755E /* Health */,
+				6BEE86FA2CD2F2510005755E /* Home */,
 				6BEE86E92CD2DBDD0005755E /* Gender */,
 				6BEE86D62CD2CEAB0005755E /* Root */,
 				6BEE86C82CD2CB1D0005755E /* Extension */,
+				6BEE86F72CD2EF520005755E /* CoreData */,
 				6BEE86B12CD2C7C30005755E /* AppDelegate.swift */,
-				6BEE86E12CD2CFB10005755E /* BaseTextField.swift */,
 				6BEE86B32CD2C7C30005755E /* SceneDelegate.swift */,
 				6BEE86BD2CD2C7C40005755E /* Assets.xcassets */,
 				6BEE86BF2CD2C7C40005755E /* LaunchScreen.storyboard */,
@@ -124,6 +406,8 @@
 				6BEE86DD2CD2CF3C0005755E /* BaseButton.swift */,
 				6BEE86F52CD2ED610005755E /* GenderButton.swift */,
 				6BEE86DF2CD2CF570005755E /* String.swift */,
+				6BEE86E12CD2CFB10005755E /* BaseTextField.swift */,
+				6BE641152CD44BDD00CB5FD9 /* BaseSwitch.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -135,6 +419,8 @@
 				6BEE86CC2CD2CB4E0005755E /* SFProText-Medium.ttf */,
 				6BEE86CE2CD2CB4E0005755E /* SFProText-Regular.ttf */,
 				6BEE86CD2CD2CB4E0005755E /* SFProText-Semibold.ttf */,
+				6B8C6DDC2CD3BCFF006819FE /* Montserrat-Medium.ttf */,
+				6B8C6DDE2CD3BE7B006819FE /* Montserrat-Bold.ttf */,
 				6BEE86D22CD2CB7E0005755E /* Font.swift */,
 			);
 			path = Font;
@@ -210,6 +496,110 @@
 			path = CoreData;
 			sourceTree = "<group>";
 		};
+		6BEE86FA2CD2F2510005755E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				6B8C6DD32CD3ADBD006819FE /* ViewModel */,
+				6B8C6DCE2CD3ACE4006819FE /* Cell */,
+				6BEE86FB2CD2F2550005755E /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		6BEE86FB2CD2F2550005755E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6BEE86FD2CD2F2660005755E /* HomeViewController.swift */,
+				6BEE86FF2CD2F2700005755E /* Home.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6BEE87012CD2F2740005755E /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				6B8C6DD62CD3B717006819FE /* EventForm */,
+				6B8C6DEB2CD41B93006819FE /* ViewModel */,
+				6BEE87082CD2F2D10005755E /* View */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		6BEE87022CD2F2A80005755E /* Health */ = {
+			isa = PBXGroup;
+			children = (
+				6B8C6DEE2CD42771006819FE /* HealthForm */,
+				6BE641122CD4421C00CB5FD9 /* ViewModel */,
+				6B8C6DFF2CD43E23006819FE /* Cell */,
+				6BEE87032CD2F2AF0005755E /* View */,
+			);
+			path = Health;
+			sourceTree = "<group>";
+		};
+		6BEE87032CD2F2AF0005755E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6BEE87042CD2F2C00005755E /* HealthViewController.swift */,
+				6BEE87062CD2F2C70005755E /* Health.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6BEE87082CD2F2D10005755E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6BEE87092CD2F2DC0005755E /* CalendarViewController.swift */,
+				6BEE870B2CD2F2E50005755E /* Calendar.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6BEE870D2CD2F3020005755E /* Food */ = {
+			isa = PBXGroup;
+			children = (
+				6BE6412C2CD5380100CB5FD9 /* ViewModel */,
+				6BE641272CD5367100CB5FD9 /* Cell */,
+				6BE6411A2CD52B4100CB5FD9 /* FoodForm */,
+				6BEE870E2CD2F3060005755E /* View */,
+			);
+			path = Food;
+			sourceTree = "<group>";
+		};
+		6BEE870E2CD2F3060005755E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6BEE870F2CD2F30E0005755E /* FoodViewController.swift */,
+				6BEE87112CD2F3150005755E /* Food.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6BEE87132CD2F3210005755E /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				6BEE87142CD2F3270005755E /* View */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		6BEE87142CD2F3270005755E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6BEE87152CD2F3310005755E /* SettingsViewController.swift */,
+				6BEE87172CD2F3380005755E /* Settings.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6BEE87192CD2F33D0005755E /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				6BEE871A2CD2F3540005755E /* TabBar.storyboard */,
+				6B8C6DCC2CD2F6F8006819FE /* TabBarViewController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -268,15 +658,31 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BEE87122CD2F3150005755E /* Food.storyboard in Resources */,
+				6BEE870C2CD2F2E50005755E /* Calendar.storyboard in Resources */,
+				6BE6411E2CD52B7A00CB5FD9 /* FoodFormViewController.xib in Resources */,
+				6BEE87072CD2F2C70005755E /* Health.storyboard in Resources */,
+				6B8C6DD12CD3ACF3006819FE /* ReminderTableViewCell.xib in Resources */,
 				6BEE86BE2CD2C7C40005755E /* Assets.xcassets in Resources */,
+				6B8C6E022CD43E41006819FE /* HealthTableViewCell.xib in Resources */,
+				6BEE87002CD2F2700005755E /* Home.storyboard in Resources */,
 				6BEE86C12CD2C7C40005755E /* Base in Resources */,
 				6BEE86D12CD2CB4E0005755E /* SFProText-Regular.ttf in Resources */,
 				6BEE86B92CD2C7C30005755E /* Base in Resources */,
 				6BEE86CB2CD2CB390005755E /* SFProText-Light.ttf in Resources */,
+				6BE641322CD541D400CB5FD9 /* RecamendationCollectionViewCell.xib in Resources */,
 				6BEE86CF2CD2CB4E0005755E /* SFProText-Medium.ttf in Resources */,
+				6BEE871B2CD2F3540005755E /* TabBar.storyboard in Resources */,
 				6BEE86E72CD2D4620005755E /* WeekCollectionViewCell.xib in Resources */,
+				6B8C6DDF2CD3BE7B006819FE /* Montserrat-Bold.ttf in Resources */,
+				6B8C6DF22CD427A4006819FE /* HealthFormViewController.xib in Resources */,
+				6BE6412A2CD536BF00CB5FD9 /* FoodTableViewCell.xib in Resources */,
 				6BEE86ED2CD2DBF90005755E /* GenderViewController.xib in Resources */,
+				6B8C6DDA2CD3B74D006819FE /* EventFormViewController.xib in Resources */,
 				6BEE86D02CD2CB4E0005755E /* SFProText-Semibold.ttf in Resources */,
+				6B8C6DFD2CD4381E006819FE /* ExerciseTableViewCell.xib in Resources */,
+				6B8C6DDD2CD3BCFF006819FE /* Montserrat-Medium.ttf in Resources */,
+				6BEE87182CD2F3380005755E /* Settings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,20 +695,46 @@
 			files = (
 				6BEE86E82CD2D4620005755E /* WeekCollectionViewCell.swift in Sources */,
 				6BEE86DC2CD2CF230005755E /* ShadowView.swift in Sources */,
+				6BEE86FE2CD2F2660005755E /* HomeViewController.swift in Sources */,
 				6BEE86E02CD2CF570005755E /* String.swift in Sources */,
+				6BE6411F2CD52B7A00CB5FD9 /* FoodFormViewController.swift in Sources */,
+				6BE641162CD44BDD00CB5FD9 /* BaseSwitch.swift in Sources */,
 				6BEE86B62CD2C7C30005755E /* RootViewController.swift in Sources */,
+				6B8C6DE22CD416DA006819FE /* ReminderModel.swift in Sources */,
 				6BEE86BC2CD2C7C30005755E /* Pregnancy.xcdatamodeld in Sources */,
+				6B8C6DDB2CD3B74D006819FE /* EventFormViewController.swift in Sources */,
 				6BEE86D32CD2CB7E0005755E /* Font.swift in Sources */,
 				6BEE86F92CD2EF5F0005755E /* CoreDataManager.swift in Sources */,
+				6BE641142CD4422900CB5FD9 /* HealthViewModel.swift in Sources */,
 				6BEE86F42CD2E0DB0005755E /* PregnancyViewModel.swift in Sources */,
+				6BE641262CD52F9700CB5FD9 /* FoodFormViewModel.swift in Sources */,
+				6B8C6DE52CD4172A006819FE /* EventFormViewModel.swift in Sources */,
+				6B8C6DD22CD3ACF3006819FE /* ReminderTableViewCell.swift in Sources */,
+				6BE6412B2CD536BF00CB5FD9 /* FoodTableViewCell.swift in Sources */,
 				6BEE86DA2CD2CF050005755E /* Date.swift in Sources */,
+				6B8C6DF32CD427A4006819FE /* HealthFormViewController.swift in Sources */,
 				6BEE86E22CD2CFB10005755E /* BaseTextField.swift in Sources */,
+				6B8C6E032CD43E41006819FE /* HealthTableViewCell.swift in Sources */,
 				6BEE86F62CD2ED610005755E /* GenderButton.swift in Sources */,
+				6BEE870A2CD2F2DC0005755E /* CalendarViewController.swift in Sources */,
 				6BEE86F12CD2E05E0005755E /* PregnancyModel.swift in Sources */,
+				6B8C6DF62CD43339006819FE /* HealthModel.swift in Sources */,
+				6BEE87102CD2F30E0005755E /* FoodViewController.swift in Sources */,
+				6BE6412F2CD5381300CB5FD9 /* FoodViewModel.swift in Sources */,
+				6BEE87162CD2F3310005755E /* SettingsViewController.swift in Sources */,
+				6B8C6DCD2CD2F6F8006819FE /* TabBarViewController.swift in Sources */,
 				6BEE86B22CD2C7C30005755E /* AppDelegate.swift in Sources */,
+				6BEE87052CD2F2C00005755E /* HealthViewController.swift in Sources */,
 				6BEE86DE2CD2CF3C0005755E /* BaseButton.swift in Sources */,
+				6B8C6DF92CD4338B006819FE /* HealthFormViewModel.swift in Sources */,
+				6B8C6DED2CD41BA1006819FE /* CalendarViewModel.swift in Sources */,
+				6B8C6DD52CD3ADC9006819FE /* HomeViewModel.swift in Sources */,
 				6BEE86D82CD2CECA0005755E /* ViewController.swift in Sources */,
 				6BEE86D52CD2CEA40005755E /* UIView.swift in Sources */,
+				6BE641232CD52DFB00CB5FD9 /* FoodModel.swift in Sources */,
+				6BE641192CD4559A00CB5FD9 /* NotificationManager.swift in Sources */,
+				6B8C6DFE2CD4381E006819FE /* ExerciseTableViewCell.swift in Sources */,
+				6BE641332CD541D400CB5FD9 /* RecamendationCollectionViewCell.swift in Sources */,
 				6BEE86B42CD2C7C30005755E /* SceneDelegate.swift in Sources */,
 				6BEE86EE2CD2DBF90005755E /* GenderViewController.swift in Sources */,
 			);

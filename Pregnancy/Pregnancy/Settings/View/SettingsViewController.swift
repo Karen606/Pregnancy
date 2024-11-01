@@ -67,5 +67,16 @@ class SettingsViewController: UIViewController {
     }
 
     @IBAction func clickedDataReset(_ sender: UIButton) {
+        CoreDataManager.shared.resetData { [weak self] error in
+            guard let self = self else { return }
+            if let error = error {
+                self.showErrorAlert(message: error.localizedDescription)
+            } else {
+                UserDefaults.standard.set(false, forKey: "hasLaunchedBefore")
+                let rootViewController = UIStoryboard(name: "Root", bundle: .main).instantiateViewController(withIdentifier: "RootViewController")
+                let navigationController = UINavigationController(rootViewController: rootViewController)
+                self.changeRootViewController(to: navigationController)
+            }
+        }
     }
 }

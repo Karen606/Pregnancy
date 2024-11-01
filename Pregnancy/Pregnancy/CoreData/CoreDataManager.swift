@@ -185,4 +185,143 @@ class CoreDataManager {
         }
     }
     
+    func saveFood(foodModel: FoodModel, completion: @escaping (Error?) -> Void) {
+        let id = foodModel.id ?? UUID()
+        let backgroundContext = persistentContainer.newBackgroundContext()
+        backgroundContext.perform {
+            let fetchRequest: NSFetchRequest<Food> = Food.fetchRequest()
+            fetchRequest.predicate = NSPredicate(format: "id == %@", id as CVarArg)
+
+            do {
+                let results = try backgroundContext.fetch(fetchRequest)
+                let food: Food
+
+                if let existingFood = results.first {
+                    food = existingFood
+                } else {
+                    food = Food(context: backgroundContext)
+                    food.id = id
+                }
+                food.name = foodModel.name
+                food.callories = Int64(foodModel.callories ?? 0)
+                food.date = foodModel.date
+                try backgroundContext.save()
+                DispatchQueue.main.async {
+                    completion(nil)
+                }
+            } catch {
+                DispatchQueue.main.async {
+                    completion(error)
+                }
+            }
+        }
+    }
+    
+    func saveRecommendation(save: String, completion: @escaping (Error?) -> Void) {
+        let backgroundContext = persistentContainer.newBackgroundContext()
+        backgroundContext.perform {
+            let fetchRequest: NSFetchRequest<Recommendation> = Recommendation.fetchRequest()
+
+            do {
+                let results = try backgroundContext.fetch(fetchRequest)
+                let recommendation: Recommendation
+                if let existingRecommendation = results.first {
+                    recommendation = existingRecommendation
+                } else {
+                    recommendation = Recommendation(context: backgroundContext)
+                    recommendation.recommendations = []
+                }
+                if let currentRecommendations = recommendation.recommendations, currentRecommendations.contains(save) {
+                    DispatchQueue.main.async {
+                        completion(NSError(domain: "", code: 1, userInfo: [NSLocalizedDescriptionKey: "Recommendation already exists"]))
+                    }
+                    return
+                }
+                
+                var updatedRecommendations = recommendation.recommendations
+                updatedRecommendations?.append(save)
+                recommendation.recommendations = updatedRecommendations
+                try backgroundContext.save()
+                DispatchQueue.main.async {
+                    completion(nil)
+                }
+            } catch {
+                DispatchQueue.main.async {
+                    completion(error)
+                }
+            }
+        }
+    }
+    
+    func fetchRecommendations(completion: @escaping ([String]?, Error?) -> Void) {
+        let backgroundContext = persistentContainer.newBackgroundContext()
+        backgroundContext.perform {
+            let fetchRequest: NSFetchRequest<Recommendation> = Recommendation.fetchRequest()
+            
+            do {
+                let results = try backgroundContext.fetch(fetchRequest)
+                if let recommendation = results.first, let recommendations = recommendation.recommendations {
+                    DispatchQueue.main.async {
+                        completion(recommendations, nil)
+                    }
+                } else {
+                    DispatchQueue.main.async {
+                        completion([], nil)
+                    }
+                }
+            } catch {
+                DispatchQueue.main.async {
+                    completion(nil, error)
+                }
+            }
+        }
+    }
+
+
+    
+    func fetchFoods(completion: @escaping ([FoodModel], Error?) -> Void) {
+        let backgroundContext = persistentContainer.newBackgroundContext()
+        backgroundContext.perform {
+            let fetchRequest: NSFetchRequest<Food> = Food.fetchRequest()
+            
+            do {
+                let results = try backgroundContext.fetch(fetchRequest)
+                var foodModels: [FoodModel] = []
+                for result in results {
+                    let foodModel = FoodModel(id: result.id, name: result.name, callories: Int(result.callories), date: result.date)
+                    foodModels.append(foodModel)
+                }
+                completion(foodModels, nil)
+            } catch {
+                DispatchQueue.main.async {
+                    completion([], error)
+                }
+            }
+        }
+    }
+    
+    func resetData(completion: @escaping (Error?) -> Void) {
+        let backgroundContext = persistentContainer.newBackgroundContext()
+        backgroundContext.perform {
+            let entities = ["Pregnancy", "Reminder", "Health"]
+            
+            do {
+                for entityName in entities {
+                    let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: entityName)
+                    let deleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
+                    
+                    try backgroundContext.execute(deleteRequest)
+                }
+                try backgroundContext.save()
+                DispatchQueue.main.async {
+                    completion(nil)
+                }
+            } catch {
+                DispatchQueue.main.async {
+                    completion(error)
+                }
+            }
+        }
+    }
+
 }
