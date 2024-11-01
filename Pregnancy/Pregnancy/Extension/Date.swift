@@ -25,4 +25,21 @@ extension Date {
         let components = calendar.dateComponents([.weekOfYear], from: self, to: Date())
         return components.weekOfYear ?? 1
     }
+    
+    func notifyDate() -> Date {
+        if let date = Calendar.current.date(byAdding: .hour, value: -2, to: self), self < date {
+            return date
+        }
+        return self
+    }
+    
+    func setTime(time: Date) -> Date {
+        let calendar = Calendar.current
+        let components1 = calendar.dateComponents([.hour, .minute, .second], from: time)
+        let dateComponents2 = calendar.dateComponents([.year, .month, .day], from: self)
+        if let newDate = calendar.date(from: dateComponents2)?.addingTimeInterval(TimeInterval(components1.hour! * 3600 + components1.minute! * 60 + components1.second!)) {
+            return newDate
+        }
+        return Date()
+    }
 }

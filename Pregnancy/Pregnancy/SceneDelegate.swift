@@ -14,7 +14,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
-        
         let window = UIWindow(windowScene: windowScene)
         self.window = window
         let hasLaunchedBefore = UserDefaults.standard.bool(forKey: "hasLaunchedBefore")
@@ -26,7 +25,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                 let navigationController = UINavigationController(rootViewController: rootViewController)
                 window.rootViewController = navigationController
             }
-        
+        let isDarkModeEnabled = UserDefaults.standard.bool(forKey: "isDarkModeEnabled")
+        window.overrideUserInterfaceStyle = isDarkModeEnabled ? .dark : .light
         window.makeKeyAndVisible()
         guard let _ = (scene as? UIWindowScene) else { return }
     }

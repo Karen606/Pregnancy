@@ -65,7 +65,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ReminderTableViewCell", for: indexPath) as! ReminderTableViewCell
-        cell.configure(reminder: viewModel.reminders[indexPath.row])
+        cell.configure(reminder: viewModel.reminders[indexPath.row], index: indexPath.row + 1)
         return cell
     }
 }

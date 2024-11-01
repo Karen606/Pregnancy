@@ -89,6 +89,8 @@ class EventFormViewController: UIViewController {
             if let error = error {
                 self.showErrorAlert(message: error.localizedDescription)
             } else {
+                let date = viewModel.reminderModel.date?.setTime(time: viewModel.reminderModel.time ?? Date())
+                NotificationManager.shared.scheduleNotification(for: date?.notifyDate() ?? Date(), title: viewModel.reminderModel.name ?? "", body: date?.toString(format: "dd/MM/yy hh:mm") ?? "")
                 self.completion?()
                 self.dismiss(animated: false)
             }

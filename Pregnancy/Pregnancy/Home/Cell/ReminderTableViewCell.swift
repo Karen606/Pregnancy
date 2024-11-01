@@ -14,6 +14,7 @@ class ReminderTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.backgroundColor = .clear
         reminderLabel.font = .regular(size: 12)
         dateLabel.font = .regular(size: 12)
     }
@@ -23,8 +24,8 @@ class ReminderTableViewCell: UITableViewCell {
 
     }
     
-    func configure(reminder: ReminderModel) {
-        reminderLabel.text = "1. \(reminder.name ?? "")"
+    func configure(reminder: ReminderModel, index: Int) {
+        reminderLabel.text = "\(index). \(reminder.name ?? "")"
         dateLabel.text = "\(reminder.date?.toString(format: "dd/MM/yy") ?? "") \(reminder.time?.toString(format: "hh:mm") ?? "")"
     }
     
